@@ -128,6 +128,19 @@ video {
   background-image: url('../assets/images/ui/klee-selected.png');
 }
 
+.banner-button.university-alliance-cup {
+  background-image: url('../assets/images/ui/university-alliance-cup.png');
+}
+.banner-button.university-alliance-cup.selected {
+  background-image: url('../assets/images/ui/university-alliance-cup-selected.png');
+}
+.banner-button.lodi-event-wish {
+  background-image: url('../assets/images/ui/university-alliance-cup.png');
+}
+.banner-button.lodi-event-wish {
+  background-image: url('../assets/images/ui/university-alliance-cup-selected.png');
+}
+
 .banner-button.farewell-of-snezhnaya {
   background-image: url('../assets/images/ui/childe.png');
 }

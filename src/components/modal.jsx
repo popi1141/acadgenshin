@@ -15,23 +15,15 @@ export default function Modal(props) {
         className="close-button"></div>
           <h2>Disclaimer</h2>
           <p>
-            This Genshin Impact Wish Simulator was only created for fun and absolutely no monetary gain.
+            This AcadArena Gacha Simulator was only created for fun for April Fool's day to celebrate the Philippine esports and campus esports scene and is not meant for any monetary gain.
           </p>
+
           <p>
-            I am someone who enjoys playing Genshin Impact and enjoys building applications for fun.
-            I am not affiliated with Mihoyo, all assets in this application were taken from third party websites and some screenshotted from the game itself.
+            The project is a custom fork of the amazing work done by Uzair Ashraf. The source code is available <a href="https://github.com/uzair-ashraf/genshin-impact-wish-simulator" target="_blank">here</a>, please give it a star if you like it!
           </p>
+
           <p>
-            If you are someone from Mihoyo and would like this website taken down please email me <a href="mailto:uzinatorcl@gmail.com">here</a> and I shall do so.
-          </p>
-          <p>
-            Pls don't get me in trouble this was just for fun T_T
-          </p>
-          <p>
-            The source code is available <a href="https://github.com/uzair-ashraf/genshin-impact-wish-simulator" target="_blank">here</a>, please give it a star if you like it!
-          </p>
-          <p>
-            All product names, logos, and brands are property of their respective owners in the United States and/or other countries.
+            Work is inspired by MiHoYo's Genshin Impact, as well as the Gacha Genre in general.
           </p>
         </div>
       </div>

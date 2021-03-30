@@ -16,6 +16,8 @@ import MomentOfBloom from '../models/moment-of-bloom'
 import BeginnersWish from '../models/beginners-wish'
 import EpitomeInvocation from '../models/epitome-invocation'
 import WanderlustInvocation from '../models/wanderlust-invocation'
+import UniversityAllianceCup from '../models/university-alliance-cup'
+import LodiEventWish from '../models/lodi-event-wish'
 import { version } from '../../package.json';
 
 
@@ -37,6 +39,8 @@ export default class App extends Component {
     this.epitomeInvocation = new EpitomeInvocation()
     this.wanderlustInvocation = new WanderlustInvocation()
     this.momentOfBloom = new MomentOfBloom()
+    this.universityAllianceCup = new UniversityAllianceCup()
+    this.lodiEventWish = new LodiEventWish()
     this.state = {
       view: 'banners',
       currentDetails: 'beginners-wish',
@@ -61,6 +65,8 @@ export default class App extends Component {
         'adrift-in-the-harbor': 0,
         'dance-of-lanterns': 0,
         'moment-of-bloom': 0,
+        'university-alliance-cup': 0,
+        'lodi-event-wish': 0,
       }
     }
   }
@@ -145,6 +151,7 @@ export default class App extends Component {
   syncWishCountersWithState() {
     this.setState({
       userWishes: {
+        'university-alliance-cup': this.universityAllianceCup.getState().attemptsCount,
         'beginners-wish': this.beginnersWish.getState().attemptsCount,
         'invitation-to-mundane-life': this.invitationToMundaneLife.getState().attemptsCount,
         'wanderlust-invocation': this.wanderlustInvocation.getState().attemptsCount,
@@ -156,11 +163,13 @@ export default class App extends Component {
         'secretum-secretorum': this.secretumSecretorum.getState().attemptsCount,
         'adrift-in-the-harbor': this.adriftInTheHarbor.getState().attemptsCount,
         'dance-of-lanterns': this.danceOfLanterns.getState().attemptsCount,
-        'moment-of-bloom': this.momentOfBloom.getState().attemptsCount
+        'moment-of-bloom': this.momentOfBloom.getState().attemptsCount,
+        'lodi-event-wish': this.lodiEventWish.getState().attemptsCount
       }
     })
   }
   reset(previouslySelectedWish) {
+    this.universityAllianceCup.reset()
     this.beginnersWish.reset()
     this.invitationToMundaneLife.reset()
     this.wanderlustInvocation.reset()
@@ -173,6 +182,7 @@ export default class App extends Component {
     this.adriftInTheHarbor.reset()
     this.danceOfLanterns.reset()
     this.momentOfBloom.reset()
+    this.lodiEventWish.reset()
     this.setState({
       isBeginnersWishLimited: false,
       isBeginnersWishOver10: false,
@@ -193,6 +203,7 @@ export default class App extends Component {
       isBeginnersWishOver10,
       inventory,
       selectedCharacterEventWish,
+      universityAllianceCup: this.universityAllianceCup.getState(),
       beginnersWish: this.beginnersWish.getState(),
       invitationToMundaneLife: this.invitationToMundaneLife.getState(),
       wanderlustInvocation: this.wanderlustInvocation.getState(),
@@ -204,7 +215,9 @@ export default class App extends Component {
       secretumSecretorum: this.secretumSecretorum.getState(),
       adriftInTheHarbor: this.adriftInTheHarbor.getState(),
       danceOfLanterns: this.danceOfLanterns.getState(),
-      momentOfBloom: this.momentOfBloom.getState()
+      momentOfBloom: this.momentOfBloom.getState(),
+      lodiEventWish: this.lodiEventWish.getState()
+
     }
     localStorage.setItem('data', JSON.stringify(data))
     this.syncWishCountersWithState()
@@ -220,6 +233,7 @@ export default class App extends Component {
         inventory
       } = data
       this.beginnersWish.attemptsCount = data.beginnersWishCount || 0
+      this.universityAllianceCup.attemptsCount = data.universityAllianceCup || 0
       this.invitationToMundaneLife.attemptsCount = data.invitationToMundaneLife || 0
       this.wanderlustInvocation.attemptsCount = data.wanderlustInvocationCount || 0
       this.epitomeInvocation.attemptsCount = data.epitomeInvocationCount || 0
@@ -231,6 +245,7 @@ export default class App extends Component {
       this.adriftInTheHarbor.attemptsCount = data.adriftInTheHarbor || 0
       this.danceOfLanterns.attemptsCount = data.danceOfLanterns || 0
       this.momentOfBloom.attemptsCount = data.momentOfBloom || 0
+      this.lodiEventWish.attemptsCount = data.lodiEventWish || 0
       this.setState({
         isBeginnersWishLimited,
         isBeginnersWishOver10,
@@ -244,6 +259,7 @@ export default class App extends Component {
         inventory,
         selectedCharacterEventWish
       } = data
+      this.universityAllianceCup.setState(data.universityAllianceCup);
       this.beginnersWish.setState(data.beginnersWish);
       this.invitationToMundaneLife.setState(data.invitationToMundaneLife);
       this.wanderlustInvocation.setState(data.wanderlustInvocation);
@@ -256,6 +272,7 @@ export default class App extends Component {
       this.adriftInTheHarbor.setState(data.adriftInTheHarbor)
       this.danceOfLanterns.setState(data.danceOfLanterns)
       this.momentOfBloom.setState(data.momentOfBloom)
+      this.lodiEventWish.setState(data.lodiEventWish)
       this.setState({
         isBeginnersWishLimited,
         isBeginnersWishOver10,
@@ -271,7 +288,6 @@ export default class App extends Component {
           this.setBeginnersWishOver10()
         }
       })
-
     }
 
   }

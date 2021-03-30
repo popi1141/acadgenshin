@@ -9,6 +9,7 @@ export default class Settings extends Component {
       language: 'English'
     }
     this.banners = {
+      'university-alliance-cup': 'University Alliance Cup',
       'ballad-in-goblets': 'Ballad In Goblets',
       'sparkling-steps': 'Sparkling Steps',
       'gentry-of-hermitage': 'Gentry Of Hermitage',

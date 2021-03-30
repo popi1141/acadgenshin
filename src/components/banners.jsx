@@ -8,75 +8,26 @@ const banners = require.context('../assets/images/banners', true);
 export default class Banners extends Component {
   constructor(props) {
     super(props)
-    const selectedCharacterEventWish = this.props.getFormattedCharacterEventWish('kebabCase')
     this.state = {
-      selectedBanner: 'beginners-wish',
-      selectedCharacterEventWish,
+      selectedBanner: 'university-alliance-cup',
       banners: {
-        'beginners-wish': 'Novice Wishes',
-        [selectedCharacterEventWish]: 'Character Event Wish',
+        'university-alliance-cup': 'University Alliance Cup',
         'epitome-invocation': 'Weapon Event Wish',
-        'wanderlust-invocation': 'Standard Wish'
+        'lodi-event-wish': 'Lodi Event Wish'
       },
       wishes: {
-        'beginners-wish': 'beginnersWish',
-        [selectedCharacterEventWish]: this.props.getFormattedCharacterEventWish('camelCase', selectedCharacterEventWish),
+        'university-alliance-cup': 'universityAllianceCup',
         'epitome-invocation': 'epitomeInvocation',
-        'wanderlust-invocation': 'wanderlustInvocation'
+        'lodi-event-wish': 'lodiEventWish'
       },
-      wasBeginnersWishDisabled: false,
       isSettingsPageVisible: false
     }
 
   }
   componentDidMount() {
-    this.toggleBeginnersWish(this.props.isBeginnersWishLimited)
     this.setState({ selectedBanner: this.props.selectedBanner })
   }
-  componentDidUpdate(prevProps) {
-    if (prevProps.isBeginnersWishLimited !== this.props.isBeginnersWishLimited) {
-      this.toggleBeginnersWish(this.props.isBeginnersWishLimited)
-    }
-    const newSelectedCharacterEventWish = this.props.getFormattedCharacterEventWish('kebabCase')
-    // If the user selected a new banner
-    const { selectedCharacterEventWish, selectedBanner } = this.state
-    const { isBeginnersWishLimited } = this.props
-    if(newSelectedCharacterEventWish !== selectedCharacterEventWish) {
-      const { banners: oldBanners, wishes: oldWishes } = this.state
-      const banners = {}
-      const wishes = {}
-      for(const b in oldBanners) {
-        if(selectedCharacterEventWish === b) {
-          banners[newSelectedCharacterEventWish] = 'Character Event Wish'
-        } else {
-          banners[b] = oldBanners[b]
-        }
-      }
-      for(const w in oldWishes) {
-        if(selectedCharacterEventWish === w) {
-          wishes[newSelectedCharacterEventWish] = this.props.getFormattedCharacterEventWish('camelCase', newSelectedCharacterEventWish)
-        } else {
-          wishes[w] = oldWishes[w]
-        }
-      }
-      let newSelectedBanner = null
-      if(selectedBanner === selectedCharacterEventWish) {
-        newSelectedBanner = newSelectedCharacterEventWish
-      } else {
-        newSelectedBanner = selectedBanner
-      }
-      if (isBeginnersWishLimited) {
-        delete banners['beginners-wish']
-        delete wishes['beginners-wish']
-      }
-      this.setState({
-        selectedCharacterEventWish: newSelectedCharacterEventWish,
-        banners,
-        wishes,
-        selectedBanner: newSelectedBanner
-      })
-    }
-  }
+
   onCarouselChange(index) {
     this.switchBanner(Object.keys(this.state.banners)[index])
   }
@@ -91,40 +42,7 @@ export default class Banners extends Component {
       isSettingsPageVisible
     })
   }
-  toggleBeginnersWish(isLimited) {
-    if (isLimited) {
-      this.setState({
-        selectedBanner: this.props.getFormattedCharacterEventWish('kebabCase'),
-        banners: {
-          [this.props.getFormattedCharacterEventWish('kebabCase')]: 'Character Event Wish',
-          'epitome-invocation': 'Weapon Event Wish',
-          'wanderlust-invocation': 'Standard Wish'
-        },
-        wishes: {
-          [this.props.getFormattedCharacterEventWish('kebabCase')]: this.props.getFormattedCharacterEventWish('camelCase'),
-          'epitome-invocation': 'epitomeInvocation',
-          'wanderlust-invocation': 'wanderlustInvocation'
-        },
-        wasBeginnersWishDisabled: isLimited
-      })
-    } else {
-      this.setState({
-        banners: {
-          'beginners-wish': 'Novice Wishes',
-          [this.props.getFormattedCharacterEventWish('kebabCase')]: 'Character Event Wish',
-          'epitome-invocation': 'Weapon Event Wish',
-          'wanderlust-invocation': 'Standard Wish'
-        },
-        wishes: {
-          'beginners-wish': 'beginnersWish',
-          [this.props.getFormattedCharacterEventWish('kebabCase')]: this.props.getFormattedCharacterEventWish('camelCase'),
-          'epitome-invocation': 'epitomeInvocation',
-          'wanderlust-invocation': 'wanderlustInvocation'
-        },
-        wasBeginnersWishDisabled: isLimited
-      })
-    }
-  }
+
   render() {
     const {
       selectedBanner,
@@ -137,7 +55,6 @@ export default class Banners extends Component {
       hideModal,
       reset,
       wish,
-      isBeginnersWishOver10,
       getFormattedCharacterEventWish,
       updateCharacterEventWish,
       saveData,
@@ -208,17 +125,6 @@ export default class Banners extends Component {
               </Carousel>
             </div>
             <div className="action-container">
-              <div className="button-container">
-                <button
-                  onClick={() => this.toggleSettingsModal(true)}
-                >Settings</button>
-                <button
-                  onClick={() => setView('details')}
-                >Details</button>
-                <button
-                  onClick={() => setView('inventory')}
-                >Inventory</button>
-              </div>
               <div className="wish-container d-flex justify-content-center">
                 <div
                   onClick={() => {
@@ -226,10 +132,8 @@ export default class Banners extends Component {
                   }}
                   className="wish-button"
                 >Wish</div>
-                <div
-                  className={`wish-button ${selectedBanner === 'beginners-wish' && isBeginnersWishOver10 && 'disabled'}`}
+                <div className="wish-button"
                   onClick={() => {
-                    if(isBeginnersWishOver10 && selectedBanner === 'beginners-wish') return;
                     wish(this.state.wishes[selectedBanner])
                   }}
                 >
