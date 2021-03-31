@@ -16,8 +16,10 @@ import MomentOfBloom from '../models/moment-of-bloom'
 import BeginnersWish from '../models/beginners-wish'
 import EpitomeInvocation from '../models/epitome-invocation'
 import WanderlustInvocation from '../models/wanderlust-invocation'
-import UniversityAllianceCup from '../models/university-alliance-cup'
 import LodiEventWish from '../models/lodi-event-wish'
+import GamerStarterPack from '../models/gamer-starter-pack'
+import UniversityAllianceCup from '../models/university-alliance-cup'
+import FlamesOfCampus from '../models/flames-of-campus'
 import { version } from '../../package.json';
 
 
@@ -39,19 +41,21 @@ export default class App extends Component {
     this.epitomeInvocation = new EpitomeInvocation()
     this.wanderlustInvocation = new WanderlustInvocation()
     this.momentOfBloom = new MomentOfBloom()
-    this.universityAllianceCup = new UniversityAllianceCup()
     this.lodiEventWish = new LodiEventWish()
+    this.gamerStarterPack = new GamerStarterPack()
+    this.universityAllianceCup = new UniversityAllianceCup()
+    this.flamesOfCampus = new FlamesOfCampus()
     this.state = {
       view: 'banners',
-      currentDetails: 'beginners-wish',
-      selectedWish: 'beginnersWish',
+      currentDetails: 'gamer-starter-pack',
+      selectedWish: 'gamerStarterPack',
       isBeginnersWishLimited: false,
       isBeginnersWishOver10: false,
       inventory: {},
       wasDisclaimerSeen: false,
       isSettingsPageVisible: false,
       currentWishes: [],
-      selectedCharacterEventWish: 'moment-of-bloom',
+      selectedCharacterEventWish: 'gamer-starter-pack',
       userWishes: {
         'beginners-wish': 0,
         'invitation-to-mundane-life': 0,
@@ -67,6 +71,8 @@ export default class App extends Component {
         'moment-of-bloom': 0,
         'university-alliance-cup': 0,
         'lodi-event-wish': 0,
+        'gamer-starter-pack': 0,
+        'flames-of-campus': 0
       }
     }
   }
@@ -164,7 +170,9 @@ export default class App extends Component {
         'adrift-in-the-harbor': this.adriftInTheHarbor.getState().attemptsCount,
         'dance-of-lanterns': this.danceOfLanterns.getState().attemptsCount,
         'moment-of-bloom': this.momentOfBloom.getState().attemptsCount,
-        'lodi-event-wish': this.lodiEventWish.getState().attemptsCount
+        'lodi-event-wish': this.lodiEventWish.getState().attemptsCount,
+        'gamer-starter-pack': this.gamerStarterPack.getState().attemptsCount,
+        'flames-of-campus': this.flamesOfCampus.getState().attemptsCount
       }
     })
   }
@@ -183,6 +191,8 @@ export default class App extends Component {
     this.danceOfLanterns.reset()
     this.momentOfBloom.reset()
     this.lodiEventWish.reset()
+    this.gamerStarterPack.reset()
+    this.flamesOfCampus.reset()
     this.setState({
       isBeginnersWishLimited: false,
       isBeginnersWishOver10: false,
@@ -216,8 +226,9 @@ export default class App extends Component {
       adriftInTheHarbor: this.adriftInTheHarbor.getState(),
       danceOfLanterns: this.danceOfLanterns.getState(),
       momentOfBloom: this.momentOfBloom.getState(),
-      lodiEventWish: this.lodiEventWish.getState()
-
+      lodiEventWish: this.lodiEventWish.getState(),
+      gamerStarterPack: this.gamerStarterPack.getState(),
+      flamesOfCampus: this.flamesOfCampus.getState(),
     }
     localStorage.setItem('data', JSON.stringify(data))
     this.syncWishCountersWithState()
@@ -246,6 +257,8 @@ export default class App extends Component {
       this.danceOfLanterns.attemptsCount = data.danceOfLanterns || 0
       this.momentOfBloom.attemptsCount = data.momentOfBloom || 0
       this.lodiEventWish.attemptsCount = data.lodiEventWish || 0
+      this.gamerStarterPack.attemptsCount = data.gamerStarterPack || 0
+      this.flamesOfCampus.attemptsCount = data.flamesOfCampus || 0
       this.setState({
         isBeginnersWishLimited,
         isBeginnersWishOver10,
@@ -273,6 +286,8 @@ export default class App extends Component {
       this.danceOfLanterns.setState(data.danceOfLanterns)
       this.momentOfBloom.setState(data.momentOfBloom)
       this.lodiEventWish.setState(data.lodiEventWish)
+      this.gamerStarterPack.setState(data.gamerStarterPack)
+      this.flamesOfCampus.setState(data.flamesOfCampus)
       this.setState({
         isBeginnersWishLimited,
         isBeginnersWishOver10,

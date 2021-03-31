@@ -1,432 +1,252 @@
 [
   {
-    "name": "Staff of Homa",
+    "name": "Jowa",
     "rating": 5,
-    "class": "Polearm",
+    "class": "Bow",
+    "src": "jowa.png",
+    "type": "weapon"
+  },
+  {
+    "name": "AcadArena Jersey",
+    "rating": 5,
     "isFeatured": true,
-    "src": "staff-of-homa.png",
+    "class": "Bow",
+    "src": "jersey.png",
     "type": "weapon"
   },
   {
-    "name": "Wolf's Gravestone",
+    "name": "KovaaK 2.0",
     "rating": 5,
-    "class": "Claymore",
     "isFeatured": true,
-    "src": "wolfs-gravestone.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Amos Bow",
-    "rating": 5,
-    "type": "weapon",
     "class": "Bow",
-    "src": "amos-bow.png"
-  },
-  {
-    "name": "Skyward Harp",
-    "rating": 5,
-    "class": "Bow",
-    "src": "skyward-harp.png",
+    "src": "kovaak.png",
     "type": "weapon"
   },
   {
-    "name": "Lost Prayer to the Sacred Winds",
-    "rating": 5,
-    "class": "Catalyst",
-    "src": "lost-prayer-to-the-sacred-winds.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Skyward Atlas",
-    "rating": 5,
-    "class": "Catalyst",
-    "src": "skyward-atlas.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Primordial Jade Winged-Spear",
-    "rating": 5,
-    "class": "Polearm",
-    "src": "primordial-jade-winged-spear.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Skyward Spine",
-    "rating": 5,
-    "type": "weapon",
-    "class": "Polearm",
-    "src": "skyward-spine.png"
-  },
-  {
-    "name": "Skyward Pride",
-    "rating": 5,
-    "class": "Claymore",
-    "src": "skyward-pride.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Skyward Blade",
-    "rating": 5,
-    "class": "Sword",
-    "src": "skyward-blade.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Aquila Favonia",
-    "rating": 5,
-    "class": "Sword",
-    "src": "aquila-favonia.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Sacrificial Bow",
+    "name": "Cup Noodle",
     "rating": 4,
     "class": "Bow",
+    "src": "noodles.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Laptop",
+    "rating": 4,
+    "class": "Bow",
+    "src": "laptop.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "rating": 4,
+    "class": "Bow",
+    "src": "keyboard.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Pancit Canton",
+    "rating": 4,
     "isFeatured": true,
-    "src": "sacrificial-bow.png",
+    "class": "Bow",
+    "src": "pancit.png",
     "type": "weapon"
   },
   {
-    "name": "The Widsith",
+    "name": "Microphone",
     "rating": 4,
-    "class": "Catalyst",
+    "class": "Bow",
+    "src": "mic.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Mouse",
+    "rating": 4,
+    "class": "Bow",
+    "src": "mouse.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Webcam",
+    "rating": 4,
+    "class": "Bow",
+    "src": "webcam.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Siomai Rice",
+    "rating": 4,
+    "class": "Bow",
+    "src": "siomai-rice.png",
     "isFeatured": true,
-    "src": "the-widsith.png",
     "type": "weapon"
   },
   {
-    "name": "Lithic Spear",
-    "rating": 4,
-    "class": "Polearm",
+    "name": "8 Hours of Sleep",
+    "rating": 3,
+    "class": "Bow",
+    "src": "sleep.png",
     "isFeatured": true,
-    "src": "lithic-spear.png",
     "type": "weapon"
   },
   {
-    "name": "Lithic Blade",
-    "rating": 4,
-    "class": "Claymore",
-    "isFeatured": true,
-    "src": "lithic-blade.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Lions Roar",
-    "rating": 4,
-    "class": "Sword",
-    "isFeatured": true,
-    "src": "lions-roar.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Xinyan",
-    "element": "Pyro",
-    "type": "character",
-    "rating": 4,
-    "percentX": 58,
-    "src": "Xinyan.png"
-  },
-  {
-    "name": "Sucrose",
-    "element": "Anemo",
-    "type": "character",
-    "rating": 4,
-    "id": "749031457019658401",
-    "percentX": 60,
-    "src": "Sucrose.png"
-  },
-  {
-    "name": "Diona",
-    "element": "Cryo",
-    "type": "character",
-    "rating": 4,
-    "percentX": 57,
-    "src": "Diona.png"
-  },
-  {
-    "name": "Chongyun",
-    "element": "Cryo",
-    "type": "character",
-    "rating": 4,
-    "id": "749031361934917682",
-    "percentX": 63,
-    "src": "Chongyun.png"
-  },
-  {
-    "name": "Noelle",
-    "element": "Geo",
-    "type": "character",
-    "rating": 4,
-    "id": "749031431132545057",
-    "percentX": 58,
-    "src": "Noelle.png"
-  },
-  {
-    "name": "Bennett",
-    "element": "Pyro",
-    "type": "character",
-    "rating": 4,
-    "id": "749031351533043772",
-    "percentX": 58,
-    "src": "Bennett.png"
-  },
-  {
-    "name": "Fischl",
-    "element": "Electro",
-    "type": "character",
-    "rating": 4,
-    "id": "749031374052393120",
-    "percentX": 59,
-    "src": "Fischl.png"
-  },
-  {
-    "name": "Ningguang",
-    "element": "Electro",
-    "type": "character",
-    "rating": 4,
-    "id": "749031423905759253",
-    "percentX": 58,
-    "src": "Ningguang.png"
-  },
-  {
-    "name": "Xingqiu",
-    "element": "Hydro",
-    "type": "character",
-    "rating": 4,
-    "id": "749031483263680563",
-    "percentX": 58,
-    "src": "Xingqiu.png"
-  },
-  {
-    "name": "Beidou",
-    "element": "Electro",
-    "type": "character",
-    "rating": 4,
-    "id": "749031334273613904",
-    "percentX": 55,
-    "src": "Beidou.png"
-  },
-  {
-    "name": "Xiangling",
-    "element": "Pyro",
-    "type": "character",
-    "rating": 4,
-    "id": "749031470726905977",
-    "percentX": 60,
-    "src": "Xiangling.png"
-  },
-  {
-    "name": "Razor",
-    "element": "Electro",
-    "type": "character",
-    "rating": 4,
-    "id": "749031449864306719",
-    "percentX": 42,
-    "src": "Razor.png"
-  },
-  {
-    "name": "Barbara",
-    "element": "Hydro",
-    "type": "character",
-    "rating": 4,
-    "id": "749031327726174398",
-    "percentX": 58,
-    "src": "Barbara.png"
-  },
-  {
-    "name": "Rust",
-    "rating": 4,
-    "class": "Bow",
-    "src": "rust.png",
-    "type": "weapon"
-  },
-  {
-    "name": "The Stringless",
-    "rating": 4,
-    "class": "Bow",
-    "src": "the-stringless.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Favonius Warbow",
-    "rating": 4,
-    "class": "Bow",
-    "src": "favonius-warbow.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Eye of Perception",
-    "rating": 4,
-    "class": "Catalyst",
-    "src": "eye-of-perception.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Sacrificial Fragments",
-    "rating": 4,
-    "class": "Catalyst",
-    "src": "sacrificial-fragments.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Favonius Codex",
-    "rating": 4,
-    "class": "Catalyst",
-    "src": "favonius-codex.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Favonius Lance",
-    "rating": 4,
-    "class": "Lance",
-    "type": "weapon",
-    "src": "favonius-lance.png"
-  },
-  {
-    "name": "Dragon's Bane",
-    "rating": 4,
-    "class": "Polearm",
-    "src": "dragons-bane.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Rainslasher",
-    "rating": 4,
-    "type": "weapon",
-    "class": "Claymore",
-    "src": "rainslasher.png"
-  },
-  {
-    "name": "Sacrificial Greatsword",
-    "rating": 4,
-    "type": "weapon",
-    "class": "Sword",
-    "src": "sacrificial-greatsword.png"
-  },
-  {
-    "name": "The Bell",
-    "rating": 4,
-    "class": "Claymore",
-    "src": "the-bell.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Favonius Greatsword",
-    "rating": 4,
-    "class": "Claymore",
-    "src": "favonius-greatsword.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Sacrificial Sword",
-    "rating": 4,
-    "class": "Sword",
-    "src": "sacrificial-sword.png",
-    "type": "weapon"
-  },
-  {
-    "name": "The Flute",
-    "rating": 4,
-    "class": "Sword",
-    "src": "the-flute.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Favonius Sword",
-    "rating": 4,
-    "class": "Sword",
-    "src": "favonius-sword.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Slingshot",
+    "name": "Alarm Clock",
     "rating": 3,
     "class": "Bow",
-    "src": "slingshot.png",
+    "src": "alarm-clock.png",
     "type": "weapon"
   },
   {
-    "name": "Sharpshooter's Oath",
+    "name": "Cheese Sticks",
     "rating": 3,
     "class": "Bow",
-    "src": "sharpshooters-oath.png",
+    "src": "cheesesticks.png",
     "type": "weapon"
   },
   {
-    "name": "Raven Bow",
+    "name": "Energy Drink",
     "rating": 3,
     "class": "Bow",
-    "src": "raven-bow.png",
+    "src": "energy-drink.png",
     "type": "weapon"
   },
   {
-    "name": "Emerald Orb",
+    "name": "Eraser",
     "rating": 3,
-    "type": "weapon",
-    "class": "Catalyst",
-    "src": "emerald-orb.png"
-  },
-  {
-    "name": "Thrilling Tales of Dragon Slayers",
-    "rating": 3,
-    "class": "Catalyst",
-    "src": "thrilling-tales-of-dragon-slayers.png",
+    "class": "Bow",
+    "src": "eraser.png",
     "type": "weapon"
   },
   {
-    "name": "Magic Guide",
+    "name": "Facemask",
     "rating": 3,
-    "class": "Catalyst",
-    "src": "magic-guide.png",
+    "class": "Bow",
+    "src": "mask.png",
     "type": "weapon"
   },
   {
-    "name": "Black Tassel",
+    "name": "Faceshield",
     "rating": 3,
-    "class": "Polearm",
-    "src": "black-tassel.png",
+    "class": "Bow",
+    "src": "face-shield.png",
     "type": "weapon"
   },
   {
-    "name": "Debate Club",
+    "name": "Fishballs",
     "rating": 3,
-    "class": "Claymore",
-    "src": "debate-club.png",
+    "class": "Bow",
+    "src": "fishball.png",
     "type": "weapon"
   },
   {
-    "name": "Bloodtainted Greatsword",
+    "name": "French Fries",
     "rating": 3,
-    "class": "Claymore",
-    "src": "bloodtainted-greatsword.png",
+    "class": "Bow",
+    "src": "fries.png",
     "type": "weapon"
   },
   {
-    "name": "Ferrous Shadow",
+    "name": "Headset",
     "rating": 3,
-    "class": "Claymore",
-    "src": "ferrous-shadow.png",
+    "class": "Bow",
+    "src": "headphones.png",
     "type": "weapon"
   },
   {
-    "name": "Skyrider Sword",
+    "name": "Hoodie",
     "rating": 3,
-    "class": "Sword",
-    "src": "skyrider-sword.png",
+    "class": "Bow",
+    "src": "hoodie.png",
     "type": "weapon"
   },
   {
-    "name": "Harbinger of Dawn",
+    "name": "Instant Coffee",
     "rating": 3,
-    "class": "Sword",
-    "src": "harbinger-of-dawn.png",
+    "class": "Bow",
+    "src": "coffee.png",
     "type": "weapon"
   },
   {
-    "name": "Cool Steel",
+    "name": "Mango Shake",
     "rating": 3,
-    "class": "Sword",
-    "src": "cool-steel.png",
+    "class": "Bow",
+    "src": "smoothie.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Membrane Keyboard",
+    "rating": 3,
+    "class": "Bow",
+    "src": "bad-keyboard.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Milktea",
+    "rating": 3,
+    "class": "Bow",
+    "src": "boba.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Mousepad",
+    "rating": 3,
+    "class": "Bow",
+    "src": "mousepads.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Pen",
+    "rating": 3,
+    "class": "Bow",
+    "src": "ballpen.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Pencil",
+    "rating": 3,
+    "class": "Bow",
+    "src": "pencil.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Posters",
+    "rating": 3,
+    "class": "Bow",
+    "src": "posters.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Speakers",
+    "rating": 3,
+    "class": "Bow",
+    "src": "speakers.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Squidballs",
+    "rating": 3,
+    "class": "Bow",
+    "src": "squidballs.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Sweater",
+    "rating": 3,
+    "class": "Bow",
+    "src": "sweater.png",
+    "type": "weapon"
+  },
+  {
+    "name": "T-Square",
+    "rating": 3,
+    "class": "Bow",
+    "src": "tsquare.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Wala Kang Jowa",
+    "rating": 3,
+    "class": "Bow",
+    "src": "jowa.png",
     "type": "weapon"
   }
 ]

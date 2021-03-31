@@ -1,0 +1,598 @@
+
+[ 
+  {
+    "name": "UST Llenn",
+    "element": "Pyro",
+    "type": "character",
+    "isFeatured": true,
+    "rating": 5,
+    "percentX": 50,
+    "src": "llenn.png"
+  },
+  {
+    "name": "Ariane Lim",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 5,
+    "percentX": 50,
+    "src": "Ariane.png"
+  },
+  {
+    "name": "Dani Rogacion",
+    "element": "Electro",
+    "type": "character",
+    "rating": 5,
+    "percentX": 50,
+    "src": "RD.png"
+  },
+  {
+    "name": "Ferzerk",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 5,
+    "percentX": 50,
+    "src": "ferzerk.png"
+  },
+  {
+    "name": "HAU Kinzonn",
+    "element": "Pyro",
+    "type": "character",
+    "isFeatured": true,
+    "rating": 5,
+    "percentX": 50,
+    "src": "Kinzonn.png"
+  },
+  {
+    "name": "Neep",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 5,
+    "percentX": 50,
+    "src": "neep.png"
+  },
+  {
+    "name": "Uomi",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 5,
+    "percentX": 50,
+    "src": "uomi.png"
+  },
+  {
+    "name": "UST Cresho",
+    "element": "Electro",
+    "type": "character",
+    "isFeatured": true,
+    "rating": 5,
+    "percentX": 50,
+    "src": "cresho.png"
+  },
+  {
+    "name": "UST Dane",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 5,
+    "percentX": 50,
+    "src": "dane.png"
+  },
+  {
+    "name": "UST Pao",
+    "element": "Geo",
+    "type": "character",
+    "rating": 5,
+    "percentX": 50,
+    "src": "pao.png"
+  },
+  {
+    "name": "LG Kellog",
+    "element": "Electro",
+    "type": "character",
+    "rating": 5,
+    "percentX": 50,
+    "src": "kellog.png"
+  },
+  {
+    "name": "DLSU Xavi8k",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 4,
+    "isFeatured": true,
+    "percentX": 50,
+    "src": "DLSU Xavi8k.png"
+  },
+  {
+    "name": "ADMU Mateo",
+    "element": "Geo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "ADMU Mateo.png"
+  },
+  {
+    "name": "ADMU Skwamy",
+    "element": "Electro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "ADMU Skwamy.png"
+  },
+  {
+    "name": "ADMU Yobhel",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "ADMU Yobhel.png"
+  },
+  {
+    "name": "DLSU Acervus",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "DLSU Acervus.png"
+  },
+  {
+    "name": "FAITH Payback",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 4,
+    "isFeatured": true,
+    "percentX": 50,
+    "src": "FAITH Payback.png"
+  },
+  {
+    "name": "FAITH R3N",
+    "element": "Electro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "FAITH R3N.png"
+  },
+  {
+    "name": "FIT Kiel",
+    "element": "Geo",
+    "type": "character",
+    "isFeatured": true,
+    "rating": 4,
+    "percentX": 50,
+    "src": "FIT Kiel.png"
+  },
+  {
+    "name": "FIT Miko",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "FIT Miko.png"
+  },
+  {
+    "name": "FEU RainZi",
+    "element": "Hydro",
+    "type": "character",
+    "isFeatured": true,
+    "rating": 4,
+    "percentX": 50,
+    "src": "FEU Rainzi.png"
+  },
+  {
+    "name": "FIT Tr1x",
+    "element": "Geo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "FIT Tr1x.png"
+  },
+  {
+    "name": "FIT Worship",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "FIT Worship.png"
+  },
+  {
+    "name": "HAU Diyelodax",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "HAU Diyelodax.png"
+  },
+  {
+    "name": "HAU Kaidanne",
+    "element": "Electro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "HAU Kaidanne.png"
+  },
+  {
+    "name": "HAU M1sery",
+    "element": "Geo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "M1sery.png"
+  },
+  {
+    "name": "HAU Neks",
+    "element": "Electro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "Neks.png"
+  },
+  {
+    "name": "HAU Parzival",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "HAU Parzival.png"
+  },
+  {
+    "name": "HAU Prophecy",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "HAU Prophecy.png"
+  },
+  {
+    "name": "MCL Stell4r",
+    "element": "Electro",
+    "type": "character",
+    "isFeatured": true,
+    "rating": 4,
+    "percentX": 50,
+    "src": "stell4r.png"
+  },
+  {
+    "name": "MCL Yanagi",
+    "element": "Hydro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "MCL Yanagi.png"
+  },
+  {
+    "name": "MGS ShadowBlitz",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "shadowblitz.png"
+  },
+  {
+    "name": "TUP Jermanium",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "TUP Germanium.png"
+  },
+  {
+    "name": "UPD Fael",
+    "element": "Anemo",
+    "type": "character",
+    "isFeatured": true,
+    "rating": 4,
+    "percentX": 50,
+    "src": "UPD Fael.png"
+  },
+  {
+    "name": "USA Genshin",
+    "element": "Electro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "USA Genshin.png"
+  },
+  {
+    "name": "USC FireSyjn",
+    "element": "Pyro",
+    "isFeatured": true,
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "USC Firesyjn.png"
+  },
+  {
+    "name": "USC Ramen",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "USC Ramen.png"
+  },
+  {
+    "name": "USC Tomo",
+    "element": "Hydro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "USC Tomo.png"
+  },
+  {
+    "name": "USLS Mish",
+    "element": "Geo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "mish.png"
+  },
+  {
+    "name": "USLS Pain",
+    "element": "Electro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "pain.png"
+  },
+  {
+    "name": "UST Exia",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "UST Exia.png"
+  },
+  {
+    "name": "UST Goope",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 4,
+    "percentX": 50,
+    "src": "UST Goope.png"
+  },
+  {
+    "name": "Jowa",
+    "rating": 5,
+    "class": "Bow",
+    "src": "jowa.png",
+    "type": "weapon"
+  },
+  {
+    "name": "AcadArena Jersey",
+    "rating": 5,
+    "isFeatured": true,
+    "class": "Bow",
+    "src": "jersey.png",
+    "type": "weapon"
+  },
+  {
+    "name": "KovaaK 2.0",
+    "rating": 5,
+    "class": "Bow",
+    "isFeatured": true,
+    "src": "kovaak.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Cup Noodle",
+    "rating": 4,
+    "class": "Bow",
+    "src": "noodles.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Laptop",
+    "rating": 4,
+    "isFeatured": true,
+    "class": "Bow",
+    "src": "laptop.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "rating": 4,
+    "class": "Bow",
+    "src": "keyboard.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Pancit Canton",
+    "rating": 4,
+    "class": "Bow",
+    "src": "pancit.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Microphone",
+    "rating": 4,
+    "class": "Bow",
+    "src": "mic.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Mouse",
+    "rating": 4,
+    "class": "Bow",
+    "src": "mouse.png",
+    "isFeatured": true,
+    "type": "weapon"
+  },
+  {
+    "name": "Webcam",
+    "rating": 4,
+    "class": "Bow",
+    "src": "webcam.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Siomai Rice",
+    "rating": 4,
+    "class": "Bow",
+    "src": "siomai-rice.png",
+    "type": "weapon"
+  },
+  {
+    "name": "8 Hours of Sleep",
+    "rating": 3,
+    "class": "Bow",
+    "src": "bottle.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Alarm Clock",
+    "rating": 3,
+    "class": "Bow",
+    "src": "alarm-clock.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Cheese Sticks",
+    "rating": 3,
+    "class": "Bow",
+    "src": "cheesesticks.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Energy Drink",
+    "rating": 3,
+    "class": "Bow",
+    "src": "energy-drink.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Eraser",
+    "rating": 3,
+    "class": "Bow",
+    "src": "eraser.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Facemask",
+    "rating": 3,
+    "class": "Bow",
+    "src": "mask.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Faceshield",
+    "rating": 3,
+    "class": "Bow",
+    "src": "face-shield.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Fishballs",
+    "rating": 3,
+    "class": "Bow",
+    "src": "fishball.png",
+    "type": "weapon"
+  },
+  {
+    "name": "French Fries",
+    "rating": 3,
+    "class": "Bow",
+    "src": "fries.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Headset",
+    "rating": 3,
+    "class": "Bow",
+    "src": "headphones.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Hoodie",
+    "rating": 3,
+    "class": "Bow",
+    "src": "hoodie.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Instant Coffee",
+    "rating": 3,
+    "class": "Bow",
+    "src": "coffee.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Mango Shake",
+    "rating": 3,
+    "class": "Bow",
+    "src": "smoothie.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Membrane Keyboard",
+    "rating": 3,
+    "class": "Bow",
+    "src": "bad-keyboard.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Milktea",
+    "rating": 3,
+    "class": "Bow",
+    "src": "boba.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Mousepad",
+    "rating": 3,
+    "class": "Bow",
+    "src": "mousepads.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Pen",
+    "rating": 3,
+    "class": "Bow",
+    "src": "ballpen.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Pencil",
+    "rating": 3,
+    "class": "Bow",
+    "src": "pencil.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Posters",
+    "rating": 3,
+    "class": "Bow",
+    "src": "posters.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Speakers",
+    "rating": 3,
+    "class": "Bow",
+    "src": "speakers.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Squidballs",
+    "rating": 3,
+    "class": "Bow",
+    "src": "squidballs.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Sweater",
+    "rating": 3,
+    "class": "Bow",
+    "src": "sweater.png",
+    "type": "weapon"
+  },
+  {
+    "name": "T-Square",
+    "rating": 3,
+    "class": "Bow",
+    "src": "tsquare.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Wala Kang Jowa",
+    "rating": 3,
+    "class": "Bow",
+    "src": "jowa.png",
+    "type": "weapon"
+  }
+]

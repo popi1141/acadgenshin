@@ -6,7 +6,17 @@ const weaponImages = require.context('../assets/images/weapons');
 const characterIcons = require.context('../assets/images/details/character-icons');
 export default function WishItemSingle(props) {
   const { isNewItem } = props
+  // if (props.item.element == undefined) {
+  //   console.log()
+  // }
   const {src, name, rating, type} = props.item
+  var element;
+  if (props.item.element == undefined) {
+    element = "placeholder";
+  }
+  else {
+    element = props.item.element;
+  }
   const isCharacter = type === 'character'
   const backgroundImage = `url('${isCharacter ? characterImages('./' + src).default : weaponImages('./' + src).default}')`
   return (
@@ -23,7 +33,7 @@ export default function WishItemSingle(props) {
           <Col
             className="h-100 d-flex flex-column justify-content-center align-items-center wish-item-single-content"
             style={{
-              background: isCharacter && `url('${characterIcons(`./${name}-Icon.png`).default}') left / 20% no-repeat`
+              background: isCharacter && `url('${characterIcons(`./${element}-Icon.png`).default}') left / 15% no-repeat`
             }}
             sm="12"
             md="3"

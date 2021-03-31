@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       hash: true,
-      title: 'Genshin Impact Wish Sim',
+      title: 'AcadArena Impact',
       template: `${__dirname}/src/index.html`,
       filename: `${__dirname}/dist/index.html`,
     })

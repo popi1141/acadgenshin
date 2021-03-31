@@ -59,12 +59,19 @@ video {
 }
 
 .giws-banners-container>.heading>.current-banner {
-  color: #d4bc8f;
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  text-shadow: 3px 2px 2px rgb(50, 50, 50);
-  width: 200px;
+  text-shadow: 3px 2px 2px rgb(0, 0, 0);
+  width: 30%;
   margin-left: 1.2rem;
   text-align: center;
+}
+
+.giws-banners-container>.heading>.current-banner>img {
+  max-width: 50%;
+  align-self: center;
 }
 
 .giws-banners-container>.heading>.close-window, .close-button {
@@ -91,8 +98,8 @@ video {
 }
 
 .banner-button {
-  height: 90px;
-  width: 180px;
+  height: 64px;
+  width: 165px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,6 +219,31 @@ video {
 .banner-button.wanderlust-invocation.selected {
   background-image: url('../assets/images/ui/wanderlust-selected.png');
 }
+
+/* Lodi Wish aka Holders of the Torch */
+.banner-button.lodi-event-wish {
+  background-image: url('../assets/images/ui/lodi.png');
+}
+.banner-button.lodi-event-wish.selected {
+  background-image: url('../assets/images/ui/lodi-selected.png');
+}
+
+/* Gamer Starter Pack aka Gamer Packs and Boosts */
+.banner-button.gamer-starter-pack {
+  background-image: url('../assets/images/ui/jowa-shomai.png');
+}
+.banner-button.gamer-starter-pack.selected {
+  background-image: url('../assets/images/ui/jowa-shomai-selected.png');
+}
+
+/* AcadArena Standard Wish aka Flames of Campus Esports */
+.banner-button.flames-of-campus {
+  background-image: url('../assets/images/ui/cresho-kinzonn.png');
+}
+.banner-button.flames-of-campus.selected {
+  background-image: url('../assets/images/ui/cresho-kinzonn-selected.png');
+}
+
 
 .carousel-container {
   position: relative;
@@ -544,7 +576,7 @@ td {
     display: none;
   }
   .wish-button {
-    width: 160px;
+    width: 250px;
   }
 }
 
@@ -565,9 +597,6 @@ td {
     margin-top: 1.2rem;
     flex-wrap: wrap;
   }
-  .wish-button {
-    width: 150px;
-  }
   .action-container>.button-container>button {
     font-size: .8rem;
     padding: 5px 15px;
@@ -579,31 +608,47 @@ td {
 }
 
 @media (max-width: 576px) {
+  .carousel-container {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    height: 100%;
+  }
+  .select-banner {
+    width: 100%;
+  }
   .banner-button {
-    height: 50px;
-    width: 100px;
+    width: 150px;
+    margin: 0% 2% 0% 0%;
+  }
+  .heading {
+    flex-direction: column;
   }
   .giws-banners-container>.heading>.current-banner {
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100px;
     margin-left: 1.2rem;
     text-align: center;
   }
-  .wish-container {
+  .giws-banners-container>.heading>.current-banner {
+    width: 100%;
     flex-direction: column;
-    margin-bottom: 1rem;
   }
-  .wish-button {
-    width: 123px;
+  .wish-container {
+    width: 100%;
+    margin-bottom: 1rem;
   }
   .wish-counter {
     font-size: .8rem;
   }
+  .button-container {
+    display: none;
+  }
 }
 
-@media (max-width: 320px) {
-  .current-banner {
-    display: none;
+@media (max-width: 480px) {
+  .banner-button {
+    width: 100px;
+    margin: 0% 2% 0% 0%;
   }
   .action-container>.button-container {
     flex-direction: column;

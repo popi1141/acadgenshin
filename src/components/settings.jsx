@@ -73,7 +73,7 @@ export default class Settings extends Component {
             >
               <Container>
                 <Row>
-                  <Col xs="12">
+                  {/* <Col xs="12">
                     <FormGroup className="text-left">
                       <Label for="characterBanner" className="pb-1 pl-1 h5">Character Banner</Label>
                       <Input
@@ -88,7 +88,7 @@ export default class Settings extends Component {
                         }
                       </Input>
                     </FormGroup>
-                  </Col>
+                  </Col> */}
                   <Col xs="12">
                     <div className="button-container justify-content-around my-2">
                       <button
@@ -97,7 +97,7 @@ export default class Settings extends Component {
                           closeSettings()
                       }}
                       type="button">Reset Inventory</button>
-                      <button>Apply Changes</button>
+                      {/* <button>Apply Changes</button> */}
                     </div>
                   </Col>
                 </Row>

@@ -4,7 +4,7 @@
     "element": "Pyro",
     "type": "character",
     "rating": 5,
-    "percentX": 57,
+    "percentX": 50,
     "src": "llenn.png"
   },
   {
@@ -13,23 +13,23 @@
     "type": "character",
     "rating": 5,
     "isFeatured": true,
-    "percentX": 58,
-    "src": "placeholder.png"
+    "percentX": 50,
+    "src": "Ariane.png"
   },
   {
     "name": "Dani Rogacion",
     "element": "Electro",
     "type": "character",
     "rating": 5,
-    "percentX": 58,
-    "src": "placeholder.png"
+    "percentX": 50,
+    "src": "RD.png"
   },
   {
     "name": "Ferzerk",
     "element": "Cryo",
     "type": "character",
     "rating": 5,
-    "percentX": 63,
+    "percentX": 50,
     "src": "ferzerk.png"
   },
   {
@@ -37,23 +37,24 @@
     "element": "Pyro",
     "type": "character",
     "rating": 5,
-    "percentX": 59,
-    "src": "placeholder.png"
+    "percentX": 50,
+    "src": "Kinzonn.png"
   },
   {
     "name": "Justin Banusing",
     "element": "Anemo",
     "type": "character",
     "rating": 5,
-    "percentX": 57,
-    "src": "placeholder.png"
+    "percentX": 50,
+    "src": "Justin.png"
   },
   {
     "name": "Kitz Cua",
     "element": "Cryo",
+    "isFeatured": true,
     "type": "character",
     "rating": 5,
-    "percentX": 63,
+    "percentX": 50,
     "src": "kitzcua.png"
   },
   {
@@ -62,7 +63,7 @@
     "type": "character",
     "rating": 5,
     "isFeatured": true,
-    "percentX": 58,
+    "percentX": 50,
     "src": "butters.png"
   },
   {
@@ -70,25 +71,25 @@
     "element": "Pyro",
     "type": "character",
     "rating": 5,
-    "percentX": 60,
+    "percentX": 50,
     "src": "leo.png"
   },
   {
     "name": "Ling2x",
-    "element": "Pyro",
+    "element": "Hydro",
     "type": "character",
     "isFeatured": true,
     "rating": 5,
-    "percentX": 58,
+    "percentX": 50,
     "src": "ling.png"
   },
   {
     "name": "Manjean",
-    "element": "Anemo",
+    "element": "Hydro",
     "type": "character",
     "isFeatured": true,
     "rating": 5,
-    "percentX": 60,
+    "percentX": 50,
     "src": "manjean.png"
   },
   {
@@ -96,7 +97,7 @@
     "element": "Cryo",
     "type": "character",
     "rating": 5,
-    "percentX": 57,
+    "percentX": 50,
     "src": "neep.png"
   },
   {
@@ -104,7 +105,7 @@
     "element": "Geo",
     "type": "character",
     "rating": 5,
-    "percentX": 58,
+    "percentX": 50,
     "src": "Riku.png"
   },
   {
@@ -112,15 +113,15 @@
     "element": "Pyro",
     "type": "character",
     "rating": 5,
-    "percentX": 58,
+    "percentX": 50,
     "src": "uomi.png"
   },
   {
     "name": "UPD Paru",
-    "element": "Electro",
+    "element": "Pyro",
     "type": "character",
     "rating": 5,
-    "percentX": 59,
+    "percentX": 50,
     "src": "paru.png"
   },
   {
@@ -128,23 +129,23 @@
     "element": "Electro",
     "type": "character",
     "rating": 5,
-    "percentX": 58,
+    "percentX": 50,
     "src": "cresho.png"
   },
   {
     "name": "UST Dane",
-    "element": "Electro",
+    "element": "Anemo",
     "type": "character",
     "rating": 5,
-    "percentX": 55,
+    "percentX": 50,
     "src": "dane.png"
   },
   {
     "name": "UST Pao",
-    "element": "Electro",
+    "element": "Geo",
     "type": "character",
     "rating": 5,
-    "percentX": 42,
+    "percentX": 50,
     "src": "pao.png"
   },
   {
@@ -152,52 +153,55 @@
     "element": "Hydro",
     "type": "character",
     "rating": 5,
-    "percentX": 58,
-    "src": "placeholder.png"
+    "percentX": 50,
+    "src": "Vansu.png"
   },
   {
     "name": "DLSU Xavi8k",
-    "element": "Hydro",
+    "element": "Anemo",
     "type": "character",
     "rating": 4,
-    "percentX": 58,
-    "src": "placeholder.png"
+    "percentX": 50,
+    "src": "DLSU Xavi8k.png"
   },
   {
     "name": "Hyron",
     "element": "Hydro",
     "type": "character",
+    "isFeatured": true,
     "rating": 4,
-    "percentX": 58,
+    "percentX": 50,
     "src": "hyron.png"
   },
   {
     "name": "Percy",
-    "element": "Hydro",
+    "element": "Pyro",
     "type": "character",
+    "isFeatured": true,
     "rating": 4,
-    "percentX": 58,
-    "src": "placeholder.png"
+    "percentX": 50,
+    "src": "P3rcy.png"
   },
   {
     "name": "AcadArena Jersey",
     "rating": 5,
     "isFeatured": true,
     "class": "Bow",
-    "src": "placeholder.png",
+    "src": "jersey.png",
     "type": "weapon"
   },
   {
     "name": "KovaaK 2.0",
     "rating": 5,
     "class": "Bow",
-    "src": "placeholder.png",
+    "src": "kovaak.png",
     "type": "weapon"
   },
   {
     "name": "Cup Noodle",
     "rating": 4,
     "class": "Bow",
+    "isFeatured": true,
     "src": "noodles.png",
     "type": "weapon"
   },
@@ -242,6 +246,14 @@
     "rating": 4,
     "class": "Bow",
     "src": "siomai-rice.png",
+    "type": "weapon"
+  },
+  {
+    "name": "Pancit Canton",
+    "rating": 4,
+    "isFeatured": true,
+    "class": "Bow",
+    "src": "pancit.png",
     "type": "weapon"
   },
   {
@@ -409,7 +421,7 @@
     "name": "Wala Kang Jowa",
     "rating": 3,
     "class": "Bow",
-    "src": "placeholder.png",
+    "src": "jowa.png",
     "type": "weapon"
   }
 ]

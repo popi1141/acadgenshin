@@ -9,8 +9,8 @@ export default class BaseGacha {
     this.softPity = false
     this.guaranteedFeatured4Star = false
     this.guaranteedFeatured5Star = false
-    this.standardRange = this.generateProbabilityRange(943, 51, 6)
-    this.softPityRange = this.generateProbabilityRange(629, 51, 320)
+    this.standardRange = this.generateProbabilityRange(940, 50, 10)
+    this.softPityRange = this.generateProbabilityRange(650, 50, 300)
     this.probabilityRange = this.standardRange
   }
   set attempts(amount) {
@@ -42,7 +42,8 @@ export default class BaseGacha {
     }
   }
   getRandomRating() {
-    return this.probabilityRange[this.generateRandomNumber(this.probabilityRange.length)]
+    var x = this.probabilityRange[this.generateRandomNumber(this.probabilityRange.length)]
+    return x
   }
   flipACoin() {
     return !!(Math.round(Math.random()))
@@ -94,7 +95,7 @@ export default class BaseGacha {
     return result[this.generateRandomNumber(result.length)]
   }
   getGuaranteed4StarItemOrHigher() {
-    // .6% chance of getting 5 star item
+    //1% chance of getting 5 star item
     this.pityCounter4 = 0
     const itemRating = this.standardRange[this.generateRandomNumber(this.standardRange.length)]
     if (itemRating === 5) {

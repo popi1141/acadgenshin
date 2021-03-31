@@ -5,20 +5,21 @@ import Modal from './modal';
 import Settings from './settings'
 
 const banners = require.context('../assets/images/banners', true);
+const others = require.context('../assets/images/others', true);
 export default class Banners extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectedBanner: 'university-alliance-cup',
+      selectedBanner: 'gamer-starter-pack',
       banners: {
-        'university-alliance-cup': 'University Alliance Cup',
-        'epitome-invocation': 'Weapon Event Wish',
-        'lodi-event-wish': 'Lodi Event Wish'
+        'gamer-starter-pack': 'Gamer Packs and Boosts',
+        'lodi-event-wish': 'Holders of the Torch',
+        'flames-of-campus': 'Flames of Campus'
       },
       wishes: {
-        'university-alliance-cup': 'universityAllianceCup',
-        'epitome-invocation': 'epitomeInvocation',
-        'lodi-event-wish': 'lodiEventWish'
+        'gamer-starter-pack': 'gamerStarterPack',
+        'lodi-event-wish': 'lodiEventWish',
+        'flames-of-campus': 'flamesOfCampus'
       },
       isSettingsPageVisible: false
     }
@@ -82,7 +83,8 @@ export default class Banners extends Component {
           <div className="giws-banners-container">
             <div className="heading">
               <div className="current-banner">
-                <div>{this.bannerText}</div>
+                <img src={others(`./logo.png`).default}/> 
+                <div className="current-banner-text">{this.bannerText}</div>
               </div>
               <div className="select-banner">
                 {
@@ -96,7 +98,6 @@ export default class Banners extends Component {
                   ))
                 }
               </div>
-              <div className="close-window"></div>
             </div>
             <div className="carousel-container">
               <Carousel
@@ -125,6 +126,11 @@ export default class Banners extends Component {
               </Carousel>
             </div>
             <div className="action-container">
+              <div className="button-container">
+                  <button
+                    onClick={() => this.toggleSettingsModal(true)}
+                  >Settings</button>
+                </div>
               <div className="wish-container d-flex justify-content-center">
                 <div
                   onClick={() => {
